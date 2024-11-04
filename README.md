@@ -1,16 +1,16 @@
 # Showing a function is O() with examples
 
 ## Definition 
-A function $f(x)$ is $O(g(x))$ if there is some pair $(c, n_0)$ such that for all $x>n_0$, $f(x) < c*g(x)$. Showing that some function $f(x)$ is $O(g(x))$ therefore becomes a problem of finding a pair $(c, n_0)$ that satisfy this definition.
+A function $f(x)$ is $O(g(x))$ if there is some pair $(c, n_0)$, with $c>0$, such that for all $x>n_0$, $f(x) < c*g(x)$. Showing that some function $f(x)$ is $O(g(x))$ therefore becomes a problem of finding a pair $(c, n_0)$ that satisfy this definition.
 
 ## Steps
-The following are steps you can follow to find $(c,n_0)$ for a specific Big-O problem. To help us understand the steps, we will use this example: Show that $4x+3$ is $O(n)$.
+The following are steps you can follow to find $(c,n_0)$ for a specific Big O problem. To help us understand the steps, we will use this example: Show that $4x+3$ is $O(n)$.
 
 ### Step 1 - Find $f(x)$. 
-There are two functions in a Big-O statement. The one inside the $O()$ notation is $g(x)$. Therefore the function outside the $O()$ is $f(x)$. 
+There are two functions in a Big O statement. The one inside the $O()$ notation is $g(x)$. Therefore the function outside the $O()$ is $f(x)$. 
 
 #### Step 1 Example
-In our example, the function outside the Big-O notation is $4x+3$. Therefore $f(x) = 4x+3$
+In our example, the function outside the Big O notation is $4x+3$. Therefore $f(x) = 4x+3$
 
 ### Step 2: Find $g(x)$. 
 
@@ -33,7 +33,7 @@ We need to find an $n_0$ such that for all $x$ greater than $n_0, f(x) < c*g(x)$
 
 #### Step 4 example
 
-In our example, we have $f(x) = 4x+3$, $g(x)=x$, and $c=5$. We start by setting $f(x)$ equal to $c*g(x)$; in this example this is $4x+3=5x$. If we subtract $4x$ from both sides, we get $3=x$. This means $n_0$ is $3$ if $c=5$. Since we have found both $c$ and $n_0$, we have found the answer to our problem. Specifically, we can state that our solution is $c=3, n_0=3$. We are now done.
+In our example, we have $f(x) = 4x+3$, $g(x)=x$, and $c=5$. We start by setting $f(x)$ equal to $c*g(x)$; in this example this is $4x+3=5x$. If we subtract $4x$ from both sides, we get $3=x$. This means $n_0$ is $3$ if $c=5$. Since we have found both $c$ and $n_0$, we have found the answer to our problem. Specifically, we can state that our solution is $c=5, n_0=3$. We are now done.
 
 ## More Examples
 
